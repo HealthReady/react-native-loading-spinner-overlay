@@ -131,7 +131,7 @@ export default class Spinner extends React.Component {
         onRequestClose={() => this.close()}
         supportedOrientations={['landscape', 'portrait']}
         transparent
-        visible={visible}>
+        visible={visible && <ActivityIndicator />}>
         {spinner}
       </Modal>
     );
